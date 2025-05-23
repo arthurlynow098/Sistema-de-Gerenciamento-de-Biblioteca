@@ -1,30 +1,33 @@
-<h1 align="center">📚 <span style="color:#e44;">Sistema de Biblioteca em Rust</span></h1>
+# Sistema de Biblioteca em Rust
 
-<p align="center">
-  <b>Gerencie livros, usuários e empréstimos com relatórios em tempo real.</b><br>
-  <i>Desenvolvido em <span style="color:#dea584;">Rust</span> com foco em desempenho e simplicidade.</i>
-</p>
+Um sistema de gerenciamento de biblioteca desenvolvido em Rust. O sistema permite cadastrar livros, usuários, realizar empréstimos, devoluções e consultar relatórios e estatísticas.
 
----
+## 🚀 Começando
 
-## 🚀 <span style="color:#00bfff;">Começando</span>
+Essas instruções permitirão que você obtenha uma cópia do projeto em funcionamento na sua máquina local para desenvolvimento e testes
 
-Estas instruções permitirão que você obtenha uma cópia do projeto em funcionamento na sua máquina local para fins de desenvolvimento e testes.
+### 📋 Pré-requisitos
 
-### 📋 <span style="color:#ffaa00;">Pré-requisitos</span>
-
-✅ Ter o <span style="color:#dea584;"><b>Rust</b></span> instalado. Use o `rustup`:
-
-```bash
+Antes de começar, você vai precisar ter o Rust instalado na sua máquina. Você pode instalar via rustup:
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+Verifique a instalação:
 rustc --version
 cargo --version
+
+🔧 Instalação
+Clone o repositório:
 git clone https://github.com/seu-usuario/sistema-biblioteca.git
 cd sistema-biblioteca
-cargo build
-cargo run
-Empréstimo realizado: 1
 
+Compile o projeto:
+cargo build
+
+Execute o sistema:
+cargo run
+
+Exemplo de saída:
+Empréstimo realizado: 1
 === ESTATÍSTICAS ===
 Total de livros: 2
 Disponíveis: 1
@@ -40,25 +43,38 @@ Livros emprestados: 1
 
 Livros atualmente emprestados:
  - 1984 por George Orwell
-// Criar livros e usuários
+
+⚙️ Executando os testes
+No momento, o sistema não possui testes automatizados, mas você pode adicionar testes unitários em arquivos separados ou no próprio main.rs utilizando o módulo #[cfg(test)].
+
+🔩 Testes de ponta a ponta
+Você pode simular testes manuais executando ações no main() como:
+// Criar livro e usuário
 // Realizar empréstimos e devoluções
 // Gerar relatórios e estatísticas
-cargo fmt      # Formatação automática
-cargo clippy   # Sugestões e melhorias
+
+⌨️ Testes de estilo de codificação
+
+O projeto segue boas práticas do Rust. Utilize cargo fmt para formatação automática:
+cargo fmt
+
+E cargo clippy para detectar melhorias:
+cargo clippy
+
+📦 Implantação
+Para implantar em produção, compile em modo release:
 cargo build --release
+
+E execute com:
 ./target/release/sistema-biblioteca
 
-🛠️ <span style="color:#20b2aa;">Tecnologias Utilizadas</span>
-🦀 <b>Rust</b> – Linguagem de programação moderna e segura
 
-📦 <b>Cargo</b> – Gerenciador de pacotes do Rust
-✒️ <span style="color:#daa520;">Autor</span>
-👤 <b>Arthur Mendes Entsev</b> – Desenvolvimento inicial
-@arthurlynow098
+🛠️ Construído com
+Rust - Linguagem de programação de sistemas
+Cargo - Gerenciador de pacotes do Rust
 
-🎁 <span style="color:#ff69b4;">Contribua com o Projeto</span>
-✅ Dê uma ⭐ no repositório
-✅ Compartilhe com outros devs
-✅ Envie PRs com melhorias!
+✒️ Autores
+Arthur Mendes Entsev – Desenvolvimento inicial – arthurlynow098
 
-<p align="center"> Feito com ❤️ em <b><span style="color:#dea584;">Rust</span></b> </p> ```
+
+Dê uma estrela no repositório ⭐
